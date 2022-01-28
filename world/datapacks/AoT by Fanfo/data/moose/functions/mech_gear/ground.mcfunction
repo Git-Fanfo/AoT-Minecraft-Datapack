@@ -6,8 +6,8 @@ execute as @a[tag=throw,scores={push_1=0}] run scoreboard players add @s man_lan
 execute as @a[tag=throw,scores={push_6=0}] run scoreboard players add @s man_land 1
 
 #Restaurar
-execute at @a store result score @a push_1 run data get entity @p UUID[0]
-execute at @a store result score @a push_6 run data get entity @p UUID[0]
+execute at @a store result score @p push_1 run data get entity @p UUID[0]
+execute at @a store result score @p push_6 run data get entity @p UUID[0]
 
 execute at @a run say @p a
 

@@ -5,7 +5,7 @@ execute as @s[scores={man_land=2..}] run summon area_effect_cloud ^ ^.5 ^ {Parti
 #Falling
 execute as @s[scores={man_land=2..}] run effect give @s slow_falling 2 2 true
 
-execute as @e[distance=..6,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}},type=!armor_stand,type=!bat, tag=!motion, tag=!target, type=!area_effect_cloud] as @s run scoreboard players add @p near 1
+execute as @e[distance=..6,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},type=!armor_stand,type=!bat, tag=!motion, tag=!target, type=!area_effect_cloud] as @s run scoreboard players add @p near 1
 
 # run scoreboard players add @p near 1
 

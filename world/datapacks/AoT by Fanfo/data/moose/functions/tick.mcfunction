@@ -16,7 +16,10 @@ execute as @e[tag=feet, type=minecraft:zombie_villager,scores={rot_cool=0}] at @
 scoreboard players remove @e[tag=feet,type=zombie_villager,scores={rot_cool=1..}] rot_cool 1
 
 # Matar Titan
-execute as @e[tag=neck, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick"}},distance=0..6] run function moose:titans/kill
+execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1
+execute as @a[tag=!armed_2,nbt={Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{blade:1b}}]}] run function moose:mech_gear/blades/attack_2
+
+execute as @e[tag=neck, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},distance=0..6] run function moose:titans/kill
 
 # Atacar al jugador
 scoreboard players set @e[tag=legs,type=slime,scores={atk_cool=0}] atk_cool 70
@@ -27,17 +30,18 @@ scoreboard players remove @e[tag=legs,type=slime,scores={atk_cool=1..}] atk_cool
 execute as @a[tag=wrap] at @s unless entity @e[tag=titan,distance=0..9,limit=1] run tag @s remove wrap
 
 # Escanear cuando usa una caña
-execute as @a[tag=!wrap,scores={man_gear=1..,man_land=0,man_cool=0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}}] at @s run function moose:mech_gear/throw
+execute as @a[tag=!wrap,scores={man_gear=1..,man_land=0,man_cool=0},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{odm_gear:1b}}]}] at @s run function moose:mech_gear/throw
+
 # Impulsarse
-execute as @a[tag=!wrap,scores={man_gear=1..,man_land=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}}] at @s run function moose:mech_gear/impulse
+execute as @a[tag=!wrap,scores={man_gear=1..,man_land=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] at @s run function moose:mech_gear/impulse
 execute as @a[tag=impulse2] at @s run execute if block ^ ^ ^1 air run tp @s ^ ^.2 ^.7
 
 
 # Reset escaneo
 scoreboard players remove @a[scores={man_gear=1..}] man_gear 1
 scoreboard players remove @a[scores={man_cool=1..}] man_cool 1
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}}] run scoreboard players set @s man_land 0
-execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}}] run function moose:mech_gear/kill
+execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run scoreboard players set @s man_land 0
+execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run function moose:mech_gear/kill
 
 # Equipar las cuerdas
 #execute as @e[tag=throw,limit=1] at @s run tp @e[tag=3D_1,sort=nearest,limit=1] ^-.3 ^-.2 ^.3

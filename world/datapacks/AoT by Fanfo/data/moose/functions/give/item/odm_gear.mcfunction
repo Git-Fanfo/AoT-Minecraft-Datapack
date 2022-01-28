@@ -1,0 +1,1 @@
+give @s slime_ball{display:{Name:'{"text":"Omni-Directional mobility gear","color":"gray","bold":true,"underlined":true}'},CustomModelData:3,odm_gear:1b} 1

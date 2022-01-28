@@ -29,6 +29,7 @@ scoreboard players set segundo time 0
 scoreboard objectives add man_gear minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add man_cool dummy
 scoreboard objectives add man_land dummy
+scoreboard objectives add man_atk dummy
 scoreboard objectives add near dummy
 scoreboard objectives add push_1 dummy
 scoreboard objectives add push_6 dummy
@@ -36,6 +37,7 @@ scoreboard players set @a near 0
 scoreboard players set @a hit 0
 scoreboard players set @a man_cool 0
 scoreboard players set @a man_land 0
+#scoreboard players set @a man_atk 0
 scoreboard players set @a push_1 0
 scoreboard players set @a push_6 0
 

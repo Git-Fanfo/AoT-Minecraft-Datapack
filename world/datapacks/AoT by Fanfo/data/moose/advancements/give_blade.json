@@ -1,0 +1,15 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:blade"
+            }
+        }
+    },
+    "rewards": {
+        "function": "moose:give/blade"
+    },
+    "parent": "moose:root"
+}

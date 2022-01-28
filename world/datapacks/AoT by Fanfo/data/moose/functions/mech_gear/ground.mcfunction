@@ -9,6 +9,8 @@ execute as @a[tag=throw,scores={push_6=0}] run scoreboard players add @s man_lan
 execute at @a store result score @a push_1 run data get entity @p UUID[0]
 execute at @a store result score @a push_6 run data get entity @p UUID[0]
 
+execute at @a run say @p a
+
 
 execute as @s at @s run tp ^ ^ ^1
 

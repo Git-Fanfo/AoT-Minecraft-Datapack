@@ -11,6 +11,6 @@ execute at @a store result score @p push_6 run data get entity @p UUID[0]
 
 execute as @s at @s run tp ^ ^ ^1
 
-execute as @s at @a[tag=throw] run playsound minecraft:block.iron_door.close player @p ~ ~ ~ 1 1.3
+execute as @s at @p[tag=throw] run playsound minecraft:block.iron_door.close player @p ~ ~ ~ 1 1.3
 
 tag @s add InGround

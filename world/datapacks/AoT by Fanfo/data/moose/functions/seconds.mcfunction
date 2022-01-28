@@ -10,7 +10,7 @@ execute as @e[type=pig,tag=!not_titan,sort=random] at @s run function moose:mob1
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{maneuver_gear:1b}}}] run function moose:mech_gear/effects
 
 # Kill old
-execute run function moose:mech_gear/kill
+#execute run function moose:mech_gear/kill
 tag @a[tag=impulse2] remove impulse2 
 
 # Efectos titanes

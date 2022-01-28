@@ -2,7 +2,8 @@ playsound minecraft:aot.shoot player @p ~ ~ ~ 1 1
 
 # SET ID PLAYER
 execute store result score @s id_player run data get entity @s UUID[0]
-execute store result score @s push run data get entity @s UUID[0]
+execute store result score @s push_1 run data get entity @s UUID[0]
+execute store result score @s push_6 run data get entity @s UUID[0]
 
 # Summon 3D derecha
 summon armor_stand ^-.5 ^ ^ {NoGravity:1b,Silent:1b,Invulnerable:1b,Small:1b,Invisible:1b,Tags:["3D_1"],Passengers:[{id:"minecraft:bat",NoGravity:1b,Silent:1b,Invulnerable:1b,NoAI:1b,Tags:["3Dhook_1"],ActiveEffects:[{Id:14b,Amplifier:1b,Duration:19999980,ShowParticles:0b}]}]}

@@ -56,50 +56,6 @@ execute as @e[tag=rope_6] at @s run tp @s @e[tag=hook_6,sort=nearest,limit=1]
 execute as @e[type=armor_stand,tag=hook_1,tag=!InGround] unless predicate moose:is_riding_snowball at @s run function moose:mech_gear/ground
 execute as @e[type=armor_stand,tag=hook_6,tag=!InGround] unless predicate moose:is_riding_snowball at @s run function moose:mech_gear/ground
 
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~-1 ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~ ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~1 ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~2 ~-.45 air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~.45 ~-1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~.45 ~ ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~.45 ~1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~.45 ~2 ~ air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~-1 ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~ ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~1 ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~ ~2 ~.45 air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~-.45 ~-1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~-.45 ~ ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~-.45 ~1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_1,tag=!InGround] at @s unless block ~-.45 ~2 ~ air run function moose:mech_gear/ground
-
-# Detectar el choque DER
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~-1 ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~ ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~1 ~-.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~2 ~-.45 air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~.45 ~-1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~.45 ~ ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~.45 ~1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~.45 ~2 ~ air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~-1 ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~ ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~1 ~.45 air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~ ~2 ~.45 air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~-.45 ~-1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~-.45 ~ ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~-.45 ~1 ~ air run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s unless block ~-.45 ~2 ~ air run function moose:mech_gear/ground
-
-#execute as @e[tag=hook_1,tag=!InGround] at @s if entity @e[tag=titan,distance=0..4,limit=1] run function moose:mech_gear/ground
-#execute as @e[tag=hook_6,tag=!InGround] at @s if entity @e[tag=titan,distance=0..4,limit=1] run function moose:mech_gear/ground
-
 # Borrar Lead (?)
 kill @e[nbt={Item:{id:"minecraft:lead"}}]
 

@@ -1,7 +1,9 @@
-scoreboard players operation @a push -= @s id_hook_1
+execute if entity @s[tag=hook_1] run scoreboard players operation @a push_1 -= @s id_hook_1
+execute if entity @s[tag=hook_6] run scoreboard players operation @a push_6 -= @s id_hook_6
 #TODO gancho izq
 
-execute as @a[tag=throw,scores={push=0}] run scoreboard players add @s man_land 1
+execute as @a[tag=throw,scores={push_1=0}] run scoreboard players add @s man_land 1
+execute as @a[tag=throw,scores={push_6=0}] run scoreboard players add @s man_land 1
 
 execute as @s at @s run tp ^ ^ ^1
 

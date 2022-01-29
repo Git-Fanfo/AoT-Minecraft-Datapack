@@ -7,6 +7,8 @@ execute as @e[tag=body] at @s store result score @s[distance=0..1] mov run data 
 execute as @e[tag=body,scores={mov=1..}] run tag @s add walk
 execute as @e[tag=body,scores={mov=..-1}] run tag @s add walk
 execute at @a as @e[tag=body,distance=0..40] run function moose:titans/animate
+execute at @e[nbt={HurtTime:10s}] run particle minecraft:block minecraft:redstone_block ^ ^1 ^-.45 0 0 0 1 30
+
 
 # Rotar legs y body
 execute as @e[tag=feet,scores={rot_cool=0}] at @s store result entity @e[tag=legs,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]

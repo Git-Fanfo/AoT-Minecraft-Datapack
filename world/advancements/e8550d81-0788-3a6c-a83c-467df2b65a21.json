@@ -5,9 +5,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/slime_block": {
+  "minecraft:recipes/building_blocks/polished_granite_slab": {
     "criteria": {
-      "has_slime_ball": "2022-01-27 17:36:38 -0500"
+      "has_polished_granite": "2022-01-27 22:45:32 -0500"
     },
     "done": true
   },
@@ -17,27 +17,45 @@
     },
     "done": true
   },
-  "minecraft:husbandry/root": {
+  "minecraft:recipes/decorations/spruce_sign": {
     "criteria": {
-      "consumed_item": "2022-01-27 17:52:55 -0500"
+      "has_spruce_planks": "2022-01-27 22:07:46 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/birch_boat": {
+  "minecraft:recipes/decorations/spruce_fence": {
     "criteria": {
-      "in_water": "2022-01-27 17:34:35 -0500"
+      "has_planks": "2022-01-27 22:07:46 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/acacia_boat": {
+  "minecraft:recipes/building_blocks/spruce_slab": {
     "criteria": {
-      "in_water": "2022-01-27 17:34:35 -0500"
+      "has_planks": "2022-01-27 22:07:46 -0500"
     },
     "done": true
   },
-  "minecraft:recipes/transportation/oak_boat": {
+  "minecraft:adventure/kill_a_mob": {
     "criteria": {
-      "in_water": "2022-01-27 17:34:35 -0500"
+      "minecraft:slime": "2022-01-27 22:48:30 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/kill_all_mobs": {
+    "criteria": {
+      "minecraft:slime": "2022-01-27 22:48:30 -0500"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/polished_granite_slab_from_polished_granite_stonecutting": {
+    "criteria": {
+      "has_polished_granite": "2022-01-27 22:45:32 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
     },
     "done": true
   },
@@ -46,6 +64,12 @@
       "enchanted_golden_apple": "2022-01-27 17:52:55 -0500"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs_from_polished_granite_stonecutting": {
+    "criteria": {
+      "has_polished_granite": "2022-01-27 22:45:32 -0500"
+    },
+    "done": true
   },
   "minecraft:recipes/redstone/sticky_piston": {
     "criteria": {
@@ -65,9 +89,123 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2022-01-27 17:36:38 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-01-27 17:33:10 -0500"
+    },
+    "done": false
+  },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs": {
+    "criteria": {
+      "has_polished_granite": "2022-01-27 22:45:32 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2022-01-27 17:36:38 -0500"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2022-01-27 17:52:55 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2022-01-27 17:34:35 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2022-01-27 22:25:22 -0500"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2022-01-27 21:45:30 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_basalt": {
+    "criteria": {
+      "has_basalt": "2022-01-27 22:08:24 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2022-01-27 17:34:35 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2022-01-27 17:34:35 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_flint": "2022-01-27 18:29:18 -0500"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/stick": {
+    "criteria": {
+      "has_planks": "2022-01-27 22:07:46 -0500"
     },
     "done": true
   },
@@ -77,9 +215,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/tools/lead": {
+  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
     "criteria": {
-      "has_slime_ball": "2022-01-27 17:36:38 -0500"
+      "has_basalt": "2022-01-27 22:08:24 -0500"
     },
     "done": true
   },
@@ -94,12 +232,6 @@
       "in_water": "2022-01-27 17:34:35 -0500"
     },
     "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2022-01-27 17:33:10 -0500"
-    },
-    "done": false
   },
   "minecraft:husbandry/tame_an_animal": {
     "criteria": {

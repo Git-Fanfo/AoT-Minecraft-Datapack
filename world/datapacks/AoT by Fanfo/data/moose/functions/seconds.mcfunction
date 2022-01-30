@@ -20,4 +20,4 @@ scoreboard players remove @e[tag=neck,scores={smoke_cool=1..}] smoke_cool 1
 #data modify entity @e[tag=neck,limit=1,sort=nearest] Health set value 20
 
 # Salvar Titan
-execute as @e[tag=neck, nbt={HurtTime:10s}] at @s run function moose:titans/heal
+execute as @e[tag=kill, nbt={HurtTime:10s}] at @s run function moose:titans/heal

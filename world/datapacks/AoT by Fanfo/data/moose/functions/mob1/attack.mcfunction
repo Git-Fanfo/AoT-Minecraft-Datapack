@@ -36,7 +36,5 @@ execute as @s[scores={atk_cool=37..47}] run execute at @e[tag=neck] run effect g
 execute as @s[scores={atk_cool=37..47}] at @e[tag=neck] run execute as @p[distance=0..4,tag=wrap] at @s run particle minecraft:block minecraft:redstone_block ^ ^1.5 ^.5 0 0 0 1 30
 execute as @s[scores={atk_cool=37..47}] at @e[tag=neck] run execute as @p[distance=0..4,tag=wrap] at @s run particle minecraft:block minecraft:pink_terracotta ^ ^1.5 ^.5 0 0 0 1 20
 
-#execute as @s[scores={atk_cool=20..40}] run execute at @e[tag=neck] run say @p[distance=0..20,tag=wrap] ola
-
 #Quitar tag
 execute as @s[scores={atk_cool=1..31}] run tag @a[tag=wrap] remove wrap

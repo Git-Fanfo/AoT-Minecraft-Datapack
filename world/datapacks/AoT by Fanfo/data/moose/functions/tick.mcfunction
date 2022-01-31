@@ -16,9 +16,15 @@ execute as @e[tag=legs] at @s store result entity @e[tag=body,limit=1,sort=neare
 # cooldown de 40
 execute as @e[tag=feet, type=minecraft:zombie_villager,scores={rot_cool=0}] at @s run scoreboard players set @s rot_cool 20
 scoreboard players remove @e[tag=feet,type=zombie_villager,scores={rot_cool=1..}] rot_cool 1
+
+# Rotar aldeanos
+execute as @e[tag=head,type=villager] at @s store result entity @e[tag=body,type=armor_stand,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
+tp @e[type=zombie_villager,tag=!titan,tag=!head] ~ -252 ~
+#M Matar aldeano
+execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run particle minecraft:block minecraft:redstone_block ^ ^ ^ 0 0 0 1 20
+
 # evitar entrar en casas
 execute as @e[tag=body] at @s unless block ^ ^ ^4 air run data modify entity @e[tag=feet,limit=1,sort=nearest] Motion set value 0
-
 
 # Matar Titan
 execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1

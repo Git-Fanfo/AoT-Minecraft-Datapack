@@ -73,3 +73,4 @@ scoreboard objectives add motion_z2_6 dummy
 
 # Crear la variable que cuente la cantidad de mobs #
 scoreboard players add titan_c counter 0
+scoreboard players add eldian_c counter 0

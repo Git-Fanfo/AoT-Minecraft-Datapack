@@ -24,7 +24,7 @@ tp @e[type=zombie_villager,tag=!titan,tag=!head] ~ -252 ~
 execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run particle minecraft:block minecraft:redstone_block ^ ^ ^ 0 0 0 1 20
 
 # evitar entrar en casas
-execute as @e[tag=body] at @s unless block ^ ^ ^4 air run data modify entity @e[tag=feet,limit=1,sort=nearest] Motion set value 0
+#execute as @e[tag=body] at @s unless block ^ ^ ^4 air run data modify entity @e[tag=feet,limit=1,sort=nearest] Motion set value 0
 
 # Matar Titan
 execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1

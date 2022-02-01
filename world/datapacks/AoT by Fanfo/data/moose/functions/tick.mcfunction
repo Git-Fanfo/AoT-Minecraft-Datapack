@@ -34,7 +34,7 @@ execute as @a[tag=!armed_2,nbt={Inventory:[{Slot:-106b,id:"minecraft:slime_ball"
 
 execute as @e[tag=kill, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},distance=0..6,scores={man_atk=1..}] run function moose:titans/kill
 #execute as @e[tag=body] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5
-execute as FanfoYT at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5
+execute as @e[tag=legs] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5
 execute as @e[tag=legs] at @s store result entity @e[type=spider,tag=kill, sort=nearest,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
 
 # Atacar al jugador

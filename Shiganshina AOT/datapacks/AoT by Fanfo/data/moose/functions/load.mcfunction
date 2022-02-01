@@ -25,6 +25,7 @@ scoreboard objectives add mov dummy
 # Ejecutar cada segundo (Optimizacion)
 scoreboard objectives add time dummy
 scoreboard players set segundo time 0
+scoreboard players set hora time 0
 
 scoreboard objectives add man_gear minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add man_cool dummy

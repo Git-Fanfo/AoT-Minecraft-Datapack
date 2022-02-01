@@ -24,7 +24,9 @@ tp @e[type=zombie_villager,tag=!titan,tag=!head] ~ -252 ~
 execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run particle minecraft:block minecraft:redstone_block ^ ^ ^ 0 0 0 1 20
 
 # evitar entrar en casas
-#execute as @e[tag=body] at @s unless block ^ ^ ^4 air run data modify entity @e[tag=feet,limit=1,sort=nearest] Motion set value 0
+#execute as @e[tag=feet] at @s unless block ^ ^3 ^2.5 air run execute run tp @s ^ ^.3 ^-3
+execute as @e[tag=feet] at @s unless block ^ ^3 ^2.5 air run execute run summon creeper ^ ^1.5 ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Fuse:0,Tags:["motion"]}
+#
 
 # Matar Titan
 execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1
@@ -46,7 +48,7 @@ execute as @a[tag=!wrap,scores={man_gear=1..,man_land=0,man_cool=0},nbt={Selecte
 
 # Impulsarse
 execute as @a[tag=!wrap,scores={man_gear=1..,man_land=1..},nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] at @s run function moose:mech_gear/impulse
-execute as @a[tag=impulse2] at @s run execute if block ^ ^ ^1 air run tp @s ^ ^.2 ^.7
+execute as @a[tag=impulse2] at @s run execute if block ^ ^ ^1 air run tp @s ^ ^.2 ^.8
 
 
 # Reset escaneo

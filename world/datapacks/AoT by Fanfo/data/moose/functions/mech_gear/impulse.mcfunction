@@ -1,4 +1,4 @@
-execute as @s[scores={man_land=2..}] run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:1.5f,Duration:15,Effects:[{Id:25b,Amplifier:28b,Duration:7}]}
+execute as @s[scores={man_land=2..}] run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:1.5f,Duration:15,Effects:[{Id:25b,Amplifier:28b,Duration:5}]}
 
 #execute as @s[scores={man_land=2..}] run effect give @s levitation 
 

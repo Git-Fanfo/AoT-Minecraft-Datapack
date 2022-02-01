@@ -16,6 +16,9 @@ execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:
 # Kill old
 tag @a[tag=impulse2] remove impulse2 
 
+#give cool
+scoreboard players set @a[tag=!throw] man_cool 0
+
 # Efectos titanes
 scoreboard players set @e[tag=neck,scores={smoke_cool=0}] smoke_cool 7
 execute as @e[tag=neck,scores={smoke_cool=7}] at @s run particle minecraft:campfire_signal_smoke ^ ^ ^-1 0 1 0 .01 60

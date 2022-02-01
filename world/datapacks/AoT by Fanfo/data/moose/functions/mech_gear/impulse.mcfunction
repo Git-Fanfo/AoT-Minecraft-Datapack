@@ -13,7 +13,7 @@ execute as @e[distance=..3,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",
 execute as @s[scores={man_land=2..,near=0}] run effect give @s resistance 1 255 true
 execute as @s[scores={man_land=2..,near=0}] run summon creeper ^ ^.45 ^-1.7 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"]}
 execute as @s[scores={man_land=2..,near=0}] run summon creeper ^ ^.45 ^-1.7 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"]}
-playsound minecraft:aot.impulse player @p ~ ~ ~ 1 1
+playsound minecraft:aot.impulse player @p[scores={man_land=2..}] ~ ~ ~ 1 1
 
 # IF = CERCA DE UNA ENTIDAD
 execute as @s[scores={man_land=2..,near=1..}] run tag @s add impulse2

@@ -12,7 +12,7 @@ execute as @e[nbt={HurtTime:10s}] at @s run particle minecraft:block minecraft:r
 
 # Rotar legs y body
 execute as @e[tag=feet,scores={rot_cool=0}] at @s store result entity @e[tag=legs,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
-
+execute as @e[tag=legs] at @s run data modify entity @e[type=minecraft:armor_stand,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
 #execute as @e[tag=feet,scores={rot_cool=0}] at @s store result entity @e[tag=body,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 #execute as @e[tag=legs] at @s store result entity @e[tag=body,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 #execute as @e[tag=body] at @s store result entity @s Rotation[0] float 1 run data get entity @e[tag=legs,limit=1,sort=nearest] Rotation[0]

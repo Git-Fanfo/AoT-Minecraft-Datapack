@@ -1,0 +1,25 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+      "#  ",
+      "XO ",
+      "@ @"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:leather"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      },
+      "O": {
+        "item": "minecraft:string"
+      },
+      "@": {
+        "item": "minecraft:iron_block"
+      }
+    },
+    "result": {
+      "item": "minecraft:knowledge_book"
+    }
+  }

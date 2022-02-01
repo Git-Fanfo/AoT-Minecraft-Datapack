@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"Ultra Hard Steel","color":"dark_red","bold":true,"underlined":true}'},HideFlags:5,Unbreakable:1b,CustomModelData:1,blade:1b,odm_gear:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:6,Operation:0,UUID:[I;-356193864,127158902,-1772238735,1929652011],Slot:"mainhand"}]} 1

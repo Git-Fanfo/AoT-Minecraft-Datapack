@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Gas Trigger",
+            "color": "dark_green",
+            "bold": true
+        },
+        "description": {
+            "text": "Craft the key to start using the ODM!"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:2}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:gas_trigger"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20
+    },
+    "parent": "moose:root"
+}

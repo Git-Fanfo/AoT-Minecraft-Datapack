@@ -1,1 +1,0 @@
-give @s slime_ball{display:{Name:'{"text":"Ultra Hard Steel","color":"dark_red","bold":true,"underlined":true}'},CustomModelData:2,blade:1b,odm_gear:1b,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:6,Operation:0,UUID:[I;-900021084,241586123,-2079902861,-1817472879],Slot:"offhand"}]} 1

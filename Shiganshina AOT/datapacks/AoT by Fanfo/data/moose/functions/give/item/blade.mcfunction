@@ -1,0 +1,3 @@
+give @s iron_ingot{display:{Name:'{"text":"Ultra Hard Steel","color":"gray","bold":true,"underlined":true}'},HideFlags:5,CustomModelData:1} 1
+give @s iron_ingot{display:{Name:'{"text":"Ultra Hard Steel","color":"gray","bold":true,"underlined":true}'},HideFlags:5,CustomModelData:1} 1
+give @s iron_ingot{display:{Name:'{"text":"Ultra Hard Steel","color":"gray","bold":true,"underlined":true}'},HideFlags:5,CustomModelData:1} 1

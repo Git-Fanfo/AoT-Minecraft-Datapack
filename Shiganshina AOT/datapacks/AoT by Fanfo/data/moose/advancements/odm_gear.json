@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Omni-directional mobility gear",
+            "color": "dark_green",
+            "bold": true
+        },
+        "description": {
+            "text": "Craft your first ODM gear!"
+        },
+        "icon": {
+            "item": "minecraft:slime_ball",
+            "nbt": "{CustomModelData:3}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:odm_gear"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 20
+    },
+    "parent": "moose:root"
+}

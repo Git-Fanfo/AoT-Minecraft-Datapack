@@ -1,0 +1,33 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "The Perfect Weapon II",
+            "color": "dark_red",
+            "bold": true
+        },
+        "description": {
+            "text": "Nein wir sind die jäger!"
+        },
+        "icon": {
+            "item": "minecraft:slime_ball",
+            "nbt": "{CustomModelData:2}"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:odm_gear_blade"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "moose:blade"
+}

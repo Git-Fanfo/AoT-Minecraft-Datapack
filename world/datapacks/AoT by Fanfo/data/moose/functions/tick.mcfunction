@@ -13,6 +13,7 @@ execute as @e[nbt={HurtTime:10s}] at @s run particle minecraft:block minecraft:r
 # Rotar legs y body
 execute as @e[tag=feet,scores={rot_cool=0}] at @s store result entity @e[tag=legs,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 execute as @e[tag=legs] at @s store result entity @e[tag=body,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
+execute as @e[tag=legs] at @s store result entity @e[tag=neck,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 # cooldown de 40
 execute as @e[tag=feet, type=minecraft:zombie_villager,scores={rot_cool=0}] at @s run scoreboard players set @s rot_cool 20
 scoreboard players remove @e[tag=feet,type=zombie_villager,scores={rot_cool=1..}] rot_cool 1
@@ -34,8 +35,8 @@ execute as @a[tag=!armed_2,nbt={Inventory:[{Slot:-106b,id:"minecraft:slime_ball"
 
 execute as @e[tag=kill, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},distance=0..6,scores={man_atk=1..}] run function moose:titans/kill
 #execute as @e[tag=body] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5
-execute as @e[tag=legs] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5 facing entity @s eyes
-execute as @e[tag=legs] at @s store result entity @e[type=spider,tag=kill, sort=nearest,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
+execute as @e[tag=neck] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5 facing entity @s eyes
+#execute as @e[tag=legs] at @s store result entity @e[type=spider,tag=kill, sort=nearest,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
 
 # Atacar al jugador
 scoreboard players set @e[tag=legs,type=slime,scores={atk_cool=0}] atk_cool 70

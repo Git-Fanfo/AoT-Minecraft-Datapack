@@ -16,7 +16,7 @@ execute as @e[tag=feet,scores={rot_cool=0}] at @s store result entity @e[tag=leg
 execute as @e[tag=body] at @s store result entity @s Rotation[0] float 1 run data get entity @e[tag=legs,limit=1,sort=nearest] Rotation[0]
 #execute as @e[tag=legs] at @s store result entity @e[tag=neck,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 # cooldown de 40
-execute as @e[tag=feet, type=minecraft:zombie_villager,scores={rot_cool=0}] at @s run scoreboard players set @s rot_cool 20
+execute as @e[tag=feet, type=minecraft:zombie_villager,scores={rot_cool=0}] at @s run scoreboard players set @s rot_cool 1
 scoreboard players remove @e[tag=feet,type=zombie_villager,scores={rot_cool=1..}] rot_cool 1
 
 # Rotar aldeanos

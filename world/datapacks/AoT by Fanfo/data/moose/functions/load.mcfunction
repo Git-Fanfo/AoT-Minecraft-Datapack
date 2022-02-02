@@ -15,7 +15,6 @@ scoreboard objectives add counter dummy
 
 # Scoreboard de los titanes
 scoreboard objectives add atk_cool dummy
-scoreboard objectives add rot_cool dummy
 scoreboard objectives add smoke_cool dummy
 scoreboard objectives add idle dummy
 scoreboard objectives add atk dummy

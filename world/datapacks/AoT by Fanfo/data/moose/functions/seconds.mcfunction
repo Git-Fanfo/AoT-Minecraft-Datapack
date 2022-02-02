@@ -26,8 +26,7 @@ execute as @e[tag=neck,scores={smoke_cool=7}] at @s run playsound minecraft:enti
 scoreboard players remove @e[tag=neck,scores={smoke_cool=1..}] smoke_cool 1
 
 # tp titan
-execute as @e[tag=feet] at @s if entity @e[tag=feet,distance=0.1..3] run summon creeper ^ ^.2 ^1.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Fuse:0,Tags:["motion"]}
-
+execute as @e[tag=feet] at @s if entity @e[tag=feet,distance=0.1..3] run summon creeper ^ ^.2 ^1.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,Fuse:0,Tags:["motion"],CustomName:'{"text":"Titan"}'}
 # set time
 execute store result score hora time run time query daytime
 execute if score hora time matches 0..20 run say dia

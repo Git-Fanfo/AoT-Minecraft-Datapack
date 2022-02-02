@@ -1,9 +1,9 @@
-execute as @s[scores={man_land=2..}] run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:1f,Duration:15,Effects:[{Id:25b,Amplifier:28b,Duration:5}]}
+execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:2f,Duration:15,Effects:[{Id:25b,Amplifier:32b,Duration:5,ShowParticles:0b}]}
 
 #execute as @s[scores={man_land=2..}] run effect give @s levitation 
 
 #Falling
-execute as @s[scores={man_land=2..}] run effect give @s slow_falling 2 2 true
+execute as @s[scores={man_land=2..}] run effect give @s slow_falling 3 0 true
 
 execute as @e[distance=..3,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},type=!armor_stand,type=!bat, tag=!motion, tag=!target, type=!area_effect_cloud] as @s run scoreboard players add @p near 1
 
@@ -11,6 +11,7 @@ execute as @e[distance=..3,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",
 
 # IF != CERCA DE UNA ENTIDAD
 execute as @s[scores={man_land=2..,near=0}] run effect give @s resistance 1 255 true
+execute as @s[scores={man_land=2..,near=0}] run summon creeper ^ ^.45 ^-1.7 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"]}
 execute as @s[scores={man_land=2..,near=0}] run summon creeper ^ ^.45 ^-1.7 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"]}
 execute as @s[scores={man_land=2..,near=0}] run summon creeper ^ ^.45 ^-1.7 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"]}
 playsound minecraft:aot.impulse player @p[scores={man_land=2..}] ~ ~ ~ 1 1

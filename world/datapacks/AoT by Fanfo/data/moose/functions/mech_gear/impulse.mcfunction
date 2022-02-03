@@ -3,7 +3,7 @@ execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_ef
 #execute as @s[scores={man_land=2..}] run effect give @s levitation 
 
 #Falling
-execute as @s[scores={man_land=2..}] run effect give @s slow_falling 3 0 true
+execute as @s[scores={man_land=2..}] run effect give @s slow_falling 1 0 true
 
 execute as @e[distance=..3,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},type=!armor_stand,type=!bat, tag=!motion, tag=!target, type=!area_effect_cloud] as @s run scoreboard players add @p near 1
 

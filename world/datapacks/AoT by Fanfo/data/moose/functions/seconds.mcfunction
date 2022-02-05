@@ -10,6 +10,13 @@ execute as @e[type=villager,tag=!not_eldian,tag=!head,sort=random] at @s run fun
 #M Matar aldeano
 execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run tp @s ~ -252 ~
 
+# Matar cuerdas en el aigre
+execute as @e[tag=3D_1,type=armor_stand] at @s unless entity @a[distance=..2] run kill @s
+execute as @e[tag=3Dhook_1,type=bat] at @s unless entity @a[distance=..2] run kill @s
+
+execute as @e[tag=3D_6,type=armor_stand] at @s unless entity @a[distance=..2] run kill @s
+execute as @e[tag=3Dhook_6,type=bat] at @s unless entity @a[distance=..2] run kill @s
+
 # Efectos del 3D
 execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run function moose:mech_gear/effects
 
@@ -31,16 +38,16 @@ execute as @e[tag=feet] at @s if entity @e[tag=feet,distance=0.1..3] run summon 
 execute store result score hora time run time query daytime
 
 execute if score hora time matches 0..20 run tellraw @p {"text":" Sunrise ------------ ☼ ------------","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"The titans are rising","color":"gold"}]}}
-execute if score hora time matches 0..3500 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.4d
+#execute if score hora time matches 0..3500 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.4d
 
 execute if score hora time matches 6000..6020 run tellraw @p {"text":" Noon ------------ ☼ ------------","bold":true,"color":"dark_red","hoverEvent":{"action":"show_text","contents":[{"text":"The titans are way more active","color":"dark_red"}]}}
-execute if score hora time matches 6000..9000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.5d
+#execute if score hora time matches 6000..9000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.5d
 
 execute if score hora time matches 12000..12020 run tellraw @p {"text":" Sunset ------------ ☼ ------------","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":[{"text":"The titans are getting slower","color":"gold"}]}}
-execute if score hora time matches 12000..14000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.4d
+#execute if score hora time matches 12000..14000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.4d
 
 execute if score hora time matches 14500..14520 run tellraw @p {"text":" Night ------------ ☼ ------------","bold":true,"color":"aqua","hoverEvent":{"action":"show_text","contents":[{"text":"The titans are vulnerable","color":"aqua"}]}}
-execute if score hora time matches 14500..22000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.2d
+#execute if score hora time matches 14500..22000 run data modify entity @e[tag=feet,sort=random,limit=1] Attributes[0].Base set value 0.2d
 
 
 # Salvar Titan

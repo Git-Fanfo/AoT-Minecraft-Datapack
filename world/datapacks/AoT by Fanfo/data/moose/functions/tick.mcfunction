@@ -2,13 +2,8 @@ scoreboard players add segundo time 1
 execute if score segundo time matches 20 run function moose:seconds
 
 # Animar TODO
-execute as @e[tag=body] at @s store result score @s[distance=0..1] mov run data get entity @e[tag=feet,sort=nearest,limit=1] Motion[0] 10000
-#execute as @e[tag=body,tag=!walk] run scoreboard players set @s walk 0
-execute as @e[tag=body,scores={mov=1..}] run tag @s add walk
-execute as @e[tag=body,scores={mov=..-1}] run tag @s add walk
-execute at @a as @e[tag=body,distance=0..40] run function moose:titans/animate
+execute at @a as @e[tag=body,distance=0..30] run function moose:selectors/body
 execute as @e[nbt={HurtTime:10s}] at @s run particle minecraft:block minecraft:redstone_block ^ ^1 ^-.45 0 0 0 1 30
-
 
 # Rotar legs y body
 execute as @e[tag=kill] at @s if entity @a[distance=..4.7] run data modify entity @e[tag=feet,sort=nearest,limit=1] Motion set value 0
@@ -31,17 +26,11 @@ execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a
 execute as @a[tag=!armed_2,nbt={Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{blade:1b}}]}] run function moose:mech_gear/blades/attack_2
 
 execute as @e[tag=kill, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},distance=0..6,scores={man_atk=1..}] run function moose:titans/kill
-#execute as @e[tag=body] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5
-execute as @e[tag=neck] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^2.10 ^-1.7 facing entity @s eyes
-#execute as @e[tag=body] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^3.90 ^-1.5 facing entity @s eyes
-#execute as @e[tag=legs] at @s store result entity @e[type=spider,tag=kill, sort=nearest,limit=1] Rotation[0] float 1 run data get entity @s Rotation[0]
 
-# Atacar al jugador
-scoreboard players set @e[tag=legs,type=slime,scores={atk_cool=0}] atk_cool 70
-#Debe ser siempre 6 ASAS
-execute as @e[tag=legs,type=slime,scores={atk_cool=1..70}] at @s if entity @a[distance=0..7.5] run function moose:mob1/attack
-scoreboard players remove @e[tag=legs,type=slime,scores={atk_cool=1..}] atk_cool 1
-#remover tags ataque
+ 
+execute as @e[tag=neck] run function moose:selectors/neck
+execute as @e[tag=legs] run function moose:selectors/legs
+
 execute as @a[tag=wrap] at @s unless entity @e[tag=titan,distance=0..9,limit=1] run tag @s remove wrap
 
 # Escanear cuando usa una caña
@@ -59,8 +48,6 @@ execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run function moose:mech_gear/kill
 
 # Equipar las cuerdas
-#execute as @e[tag=throw,limit=1] at @s run tp @e[tag=3D_1,sort=nearest,limit=1] ^-.3 ^-.2 ^.3
-#execute as @e[tag=throw,limit=1] at @s run tp @e[tag=3D_6,sort=nearest,limit=1] ^.3 ^-.2 ^.3
 execute as @a at @a if score @s id_player = @e[tag=3D_1,type=armor_stand,limit=1, sort=nearest] id_3D_1 at @s run tp @e[tag=3D_1,sort=nearest,limit=1] ^-.3 ^-.2 ^.3
 execute as @a at @a if score @s id_player = @e[tag=3D_6,type=armor_stand,limit=1, sort=nearest] id_3D_6 at @s run tp @e[tag=3D_6,sort=nearest,limit=1] ^.3 ^-.2 ^.3
 

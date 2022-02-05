@@ -1,0 +1,2 @@
+execute as @s[tag=tall] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^2.10 ^-1.7 facing entity @s eyes
+execute as @s[tag=small] at @s run tp @e[type=spider,tag=kill, sort=nearest,limit=1] ^ ^1.10 ^-1.7 facing entity @s eyes

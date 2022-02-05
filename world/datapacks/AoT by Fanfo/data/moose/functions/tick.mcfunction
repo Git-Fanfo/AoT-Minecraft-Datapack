@@ -5,31 +5,21 @@ execute if score segundo time matches 20 run function moose:seconds
 execute at @a as @e[tag=body,distance=0..30] run function moose:selectors/body
 execute as @e[nbt={HurtTime:10s}] at @s run particle minecraft:block minecraft:redstone_block ^ ^1 ^-.45 0 0 0 1 30
 
-# Rotar legs y body
-execute as @e[tag=kill] at @s if entity @a[distance=..4.7] run data modify entity @e[tag=feet,sort=nearest,limit=1] Motion set value 0
-execute as @e[tag=feet] at @s run data modify entity @e[type=minecraft:slime,tag=legs,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
-execute as @e[tag=legs] at @s run data modify entity @e[type=minecraft:armor_stand,tag=body,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
-execute as @e[tag=legs] at @s run data modify entity @e[type=minecraft:slime,tag=neck,sort=nearest,limit=1] Rotation[0] set from entity @s Rotation[0]
-
 # Rotar aldeanos
 execute as @e[tag=head,type=villager] at @s store result entity @e[tag=body,type=armor_stand,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 tp @e[type=zombie_villager,tag=!titan,tag=!head] ~ -252 ~
 #M Matar aldeano
 execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run particle minecraft:block minecraft:redstone_block ^ ^ ^ 0 0 0 1 20
 
-# evitar entrar en casas
-#execute as @e[tag=feet] at @s unless block ^ ^3 ^2.5 air run execute run tp @s ^ ^.3 ^-3
-execute as @e[tag=feet] at @s unless block ^ ^3 ^2.5 air run execute run summon creeper ^ ^1.5 ^2 {NoGravity:1b,Silent:1b,Invulnerable:1b,Fuse:0,Tags:["motion"],CustomName:'{"text":"Titan"}'}
-
 # Matar Titan
 execute as @a[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1
 execute as @a[tag=!armed_2,nbt={Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{blade:1b}}]}] run function moose:mech_gear/blades/attack_2
-
-execute as @e[tag=kill, nbt={HurtTime:10s}] at @s if entity @p[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},distance=0..6,scores={man_atk=1..}] run function moose:titans/kill
+execute as @e[tag=kill] run function moose:selectors/kill
 
  
 execute as @e[tag=neck] run function moose:selectors/neck
 execute as @e[tag=legs] run function moose:selectors/legs
+execute as @e[tag=feet] run function moose:selectors/feet
 
 execute as @a[tag=wrap] at @s unless entity @e[tag=titan,distance=0..9,limit=1] run tag @s remove wrap
 

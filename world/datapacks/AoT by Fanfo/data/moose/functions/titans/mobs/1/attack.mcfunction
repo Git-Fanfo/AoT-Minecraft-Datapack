@@ -2,13 +2,10 @@
 # AS AT CUSTOM MOB1
 
 # Sound and Particle
-#scoreboard players set @s atk_cool 40
-
 execute as @s[scores={atk_cool=70}] at @s run tag @e[tag=body,sort=nearest,limit=1] add attack
 execute as @s[scores={atk_cool=70}] at @s run scoreboard players set @e[tag=body,sort=nearest,limit=1] atk 0
 
 # Add tag wrap
-# SET DISTANCE THE ALCANCE DEL ATAQUE
 execute as @s[scores={atk_cool=69}] run tag @p add wrap
 # Titan mira a player
 execute as @s[scores={atk_cool=2..68}] as @e[tag=feet, sort=nearest, limit=1] run execute at @e[tag=feet, sort=nearest, limit=1] run tp @s ~ ~ ~ facing entity @p[tag=wrap] eyes

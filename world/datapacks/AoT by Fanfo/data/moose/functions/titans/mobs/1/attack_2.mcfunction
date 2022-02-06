@@ -6,15 +6,22 @@ execute as @s[scores={atk_cool=139}] run tag @p add wrap
 # Titan mira a player
 execute as @s[scores={atk_cool=72..138}] as @e[tag=feet, sort=nearest, limit=1] run execute at @e[tag=feet, sort=nearest, limit=1] run tp @s ~ ~ ~ facing entity @p[tag=wrap] eyes
 
-# Tp al frente
-#execute as @s[scores={atk_cool=130..137}] at @s run tp @p[tag=wrap] ^ ^9.3 ^3.5
-#execute as @s[scores={atk_cool=122..129}] at @s run tp @p[tag=wrap] ^ ^7 ^3.3
-#execute as @s[scores={atk_cool=117..121}] at @s run tp @p[tag=wrap] ^ ^6 ^3
-execute as @s[scores={atk_cool=137}] at @s run say 1
-execute as @s[scores={atk_cool=129}] at @s run say 2
-execute as @s[scores={atk_cool=121}] at @s run say 3
-# atack
-
-
 # Mirar titan
-#execute as @s[scores={atk_cool=72..138}] at @p[tag=wrap] run tp @p ~ ~ ~ facing entity @e[type=slime,sort=nearest, tag=neck,limit=1] feet
+execute as @s[scores={atk_cool=72..138}] at @p[tag=wrap] run tp @p ~ ~ ~ facing entity @e[type=slime,sort=nearest, tag=neck,limit=1] feet
+
+# Tp al frente
+execute as @s[scores={atk_cool=137}] run effect give @p[tag=wrap] levitation 2 0 true
+execute as @s[scores={atk_cool=137}] at @s run tp @p[tag=wrap] ^ ^9.6 ^3.3
+execute as @s[scores={atk_cool=129}] at @s run tp @p[tag=wrap] ^ ^9.3 ^2.7
+execute as @s[scores={atk_cool=121}] at @s run tp @p[tag=wrap] ^ ^8.2 ^2.2
+execute as @s[scores={atk_cool=113}] at @s run tp @p[tag=wrap] ^ ^8 ^1
+execute as @s[scores={atk_cool=112}] run effect give @p[tag=wrap] instant_damage 999 5 true
+execute as @s[scores={atk_cool=112}] run execute as @p[tag=wrap] at @s run particle minecraft:block minecraft:redstone_block ^ ^1 ^ 0 0 0 1 30
+execute as @s[scores={atk_cool=112}] run execute as @p[tag=wrap] at @s run particle minecraft:block minecraft:pink_terracotta ^ ^1 ^ 0 0 0 1 20
+
+#execute as @s[scores={atk_cool=137}] at @s run say 1
+#execute as @s[scores={atk_cool=129}] at @s run say 2
+#execute as @s[scores={atk_cool=121}] at @s run say 3
+# atack
+#Quitar tag
+execute as @s[scores={atk_cool=71..110}] run tag @a[tag=wrap] remove wrap

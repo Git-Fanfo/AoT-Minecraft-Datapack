@@ -83,6 +83,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2022-02-03 10:51:50 -0500"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_hoe": {
     "criteria": {
       "has_iron_ingot": "2022-02-01 09:58:14 -0500"
@@ -229,6 +235,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:slime": "2022-02-03 11:27:31 -0500",
       "minecraft:enderman": "2022-02-01 10:10:05 -0500"
     },
     "done": false

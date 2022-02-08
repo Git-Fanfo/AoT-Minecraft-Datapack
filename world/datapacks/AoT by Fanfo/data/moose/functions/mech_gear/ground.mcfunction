@@ -12,6 +12,6 @@ execute at @a store result score @p push_6 run data get entity @p UUID[0]
 execute as @s at @s run tp ^ ^ ^1
 
 execute as @s at @p[tag=throw] run playsound minecraft:block.iron_door.close player @p ~ ~ ~ 1 1.3
-execute at @p[tag=throw] run title @p actionbar ["",{"text":"<","bold":true,"color":"dark_red"},{"text":"x","bold":true,"color":"gray"},{"text":">","bold":true,"color":"dark_red"}]
+execute as @s at @p[tag=throw] run title @p actionbar ["",{"text":"<","bold":true,"color":"dark_red"},{"text":"x","bold":true,"color":"gray"},{"text":">","bold":true,"color":"dark_red"}]
 
 tag @s add InGround

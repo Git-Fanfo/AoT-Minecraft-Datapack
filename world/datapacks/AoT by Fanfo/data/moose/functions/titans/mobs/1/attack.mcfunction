@@ -8,7 +8,7 @@ execute as @s[scores={atk_cool=70}] at @s run scoreboard players set @e[tag=body
 # Add tag wrap
 execute as @s[scores={atk_cool=69}] run tag @p add wrap
 # Titan mira a player
-execute as @s[scores={atk_cool=2..68}] as @e[tag=feet, sort=nearest, limit=1] run execute at @e[tag=feet, sort=nearest, limit=1] run tp @s ~ ~ ~ facing entity @p[tag=wrap] eyes
+execute as @s[scores={atk_cool=2..68}] as @e[tag=feet, sort=nearest, limit=1] run execute at @s run tp @s ~ ~ ~ facing entity @p[tag=wrap] eyes
 
 # Tp al frente
 execute as @s[scores={atk_cool=67}] at @e[tag=feet, sort=nearest, limit=1] run tp @p[tag=wrap] ^ ^-1 ^4.5

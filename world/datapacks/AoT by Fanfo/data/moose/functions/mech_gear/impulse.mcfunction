@@ -1,6 +1,7 @@
 execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:2f,Duration:15,Effects:[{Id:25b,Amplifier:32b,Duration:5,ShowParticles:0b}]}
 
 #execute as @s[scores={man_land=2..}] run effect give @s levitation 
+title @p actionbar {"text":"/     \\","bold":true,"color":"green"}
 
 #Falling
 execute as @s[scores={man_land=2..}] run effect give @s slow_falling 1 0 true

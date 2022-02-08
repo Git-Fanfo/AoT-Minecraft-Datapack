@@ -1,4 +1,6 @@
 playsound minecraft:aot.shoot player @p ~ ~ ~ 1 1
+title @p actionbar {"text":"<   >","bold":true,"color":"gold"}
+
 
 # SET ID PLAYER
 execute store result score @s id_player run data get entity @s UUID[0]

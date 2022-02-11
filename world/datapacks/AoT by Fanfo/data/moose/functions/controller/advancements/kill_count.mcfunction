@@ -1,0 +1,1 @@
+execute as @s[scores={Titan_Kill_Count=1}] run advancement grant @s only moose:pure_titan

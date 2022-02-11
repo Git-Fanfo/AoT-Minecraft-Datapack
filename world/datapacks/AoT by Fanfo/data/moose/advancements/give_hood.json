@@ -4,12 +4,12 @@
         "unlock": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "moose:gas_trigger"
+                "recipe": "moose:hood"
             }
         }
     },
     "rewards": {
-        "function": "moose:give/gas_trigger"
+        "function": "moose:give/hood"
     },
-    "parent": "moose:gas_trigger"
+    "parent": "moose:hood"
 }

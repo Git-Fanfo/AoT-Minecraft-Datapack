@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"The ODM Gear\'s Body Weight Transfer Equipment","color":"dark_green","bold":true,"italic":true}',Lore:['{"text":"To allow quick maneuvers in 3D space, the equipment has been made as light as possible."}']},HideFlags:32,CustomModelData:5} 1

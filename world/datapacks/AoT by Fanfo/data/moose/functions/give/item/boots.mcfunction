@@ -1,0 +1,1 @@
+give @p leather_boots{display:{Name:'{"text":"Survey Corps Boots","color":"dark_green","bold":true,"italic":true}',color:16777215},HideFlags:68,Unbreakable:1b,survey_cops:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;-1805935742,-2007677455,-1871937603,335996340],Slot:"feet"}]} 1

@@ -2,17 +2,19 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Perfect Weapon II",
+            "text": "Annie Leonhart",
             "color": "dark_red",
             "bold": true
         },
         "description": {
-            "text": "Nein wir sind die jäger!",
-            "color": "white"
+            "text": "Kill 25 titans",
+            "color": "dark_purple",
+            "underlined": false,
+            "strikethrough": true
         },
         "icon": {
-            "item": "minecraft:slime_ball",
-            "nbt": "{CustomModelData:2}"
+            "item": "minecraft:flint",
+            "nbt": "{CustomModelData:28}"
         },
         "frame": "task",
         "show_toast": true,
@@ -21,14 +23,8 @@
     },
     "criteria": {
         "unlock": {
-            "trigger": "minecraft:recipe_unlocked",
-            "conditions": {
-                "recipe": "moose:odm_gear_blade"
-            }
+            "trigger": "minecraft:impossible"
         }
     },
-    "rewards": {
-        "experience": 100
-    },
-    "parent": "moose:odm_gear"
+    "parent": "moose:pure_titan_10"
 }

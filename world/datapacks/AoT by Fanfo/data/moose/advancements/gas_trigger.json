@@ -7,7 +7,8 @@
             "bold": true
         },
         "description": {
-            "text": "Craft the key to start using the ODM!"
+            "text": "Craft the key to start using the ODM!",
+            "color": "white"
         },
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
@@ -29,5 +30,5 @@
     "rewards": {
         "experience": 20
     },
-    "parent": "moose:root"
+    "parent": "moose:blade"
 }

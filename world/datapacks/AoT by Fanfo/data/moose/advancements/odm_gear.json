@@ -7,7 +7,8 @@
             "bold": true
         },
         "description": {
-            "text": "Craft your first ODM gear!"
+            "text": "Craft your first ODM gear!",
+            "color": "white"
         },
         "icon": {
             "item": "minecraft:slime_ball",
@@ -29,5 +30,5 @@
     "rewards": {
         "experience": 20
     },
-    "parent": "moose:root"
+    "parent": "moose:blade"
 }

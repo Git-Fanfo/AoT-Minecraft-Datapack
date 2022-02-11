@@ -1,0 +1,1 @@
+give @p leather_leggings{display:{Name:'{"text":"Survey Corps Harness","color":"dark_green","bold":true,"italic":true}',color:16777215},HideFlags:68,Unbreakable:1b,survey_cops:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5,Operation:0,UUID:[I;-181930014,419775805,-1605899400,502732874],Slot:"legs"}]} 1

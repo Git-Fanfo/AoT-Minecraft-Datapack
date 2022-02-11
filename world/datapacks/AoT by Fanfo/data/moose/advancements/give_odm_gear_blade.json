@@ -11,5 +11,5 @@
     "rewards": {
         "function": "moose:give/odm_gear_blade"
     },
-    "parent": "moose:blade"
+    "parent": "moose:odm_gear_blade"
 }

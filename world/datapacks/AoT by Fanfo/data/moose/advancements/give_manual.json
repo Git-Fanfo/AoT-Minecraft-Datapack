@@ -4,12 +4,12 @@
         "unlock": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "moose:gas_trigger"
+                "recipe": "moose:manual"
             }
         }
     },
     "rewards": {
-        "function": "moose:give/gas_trigger"
+        "function": "moose:give/manual"
     },
-    "parent": "moose:gas_trigger"
+    "parent": "moose:manual"
 }

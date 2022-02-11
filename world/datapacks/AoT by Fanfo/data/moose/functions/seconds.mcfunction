@@ -18,13 +18,22 @@ execute as @e[tag=3D_6,type=armor_stand] at @s unless entity @a[distance=..2] ru
 execute as @e[tag=3Dhook_6,type=bat] at @s unless entity @a[distance=..2] run kill @s
 
 # Efectos del 3D
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run function moose:mech_gear/effects
+execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{odm_gear:1b}}]}] run function moose:mech_gear/effects
+
+#Cambiar cuando tenga la tag
+execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin",tag:{survey_cops:1b}}]}] run effect give @p night_vision 12 0 true
 
 # Kill old
 tag @a[tag=impulse2] remove impulse2 
 
-#give cool
+# give cool
 scoreboard players set @a[tag=!throw] man_cool 0
+
+# Trigger
+execute as @a[nbt={SelectedItem:{id:"minecraft:written_book",tag:{manual:1b}}}] at @p run function moose:controller/manual/in_hand
+execute as @a[scores={manual=1..}] run function moose:controller/manual/trigger
+execute as @a[scores={Titan_Kill_Count=1..}] run function moose:controller/advancements/kill_count
+
 
 # Efectos titanes
 scoreboard players set @e[tag=neck,scores={smoke_cool=0}] smoke_cool 7

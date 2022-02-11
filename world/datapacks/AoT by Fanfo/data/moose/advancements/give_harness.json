@@ -4,12 +4,13 @@
         "unlock": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "moose:gas_trigger"
+                "recipe": "moose:harness"
             }
         }
     },
     "rewards": {
-        "function": "moose:give/gas_trigger"
+        "experience": 100,
+        "function": "moose:give/harness"
     },
-    "parent": "moose:gas_trigger"
+    "parent": "moose:harness"
 }

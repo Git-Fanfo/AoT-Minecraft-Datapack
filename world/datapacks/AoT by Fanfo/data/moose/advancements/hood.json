@@ -2,19 +2,19 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Perfect Weapon",
-            "color": "dark_red",
+            "text": "How it looks?",
+            "color": "dark_green",
             "bold": true
         },
         "description": {
-            "text": "Seid ihr das Essen?",
+            "text": "Craft the Survey Corps Hood!",
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
+            "item": "minecraft:carved_pumpkin",
             "nbt": "{CustomModelData:1}"
         },
-        "frame": "goal",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
@@ -23,12 +23,12 @@
         "unlock": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "moose:gas_trigger_blade"
+                "recipe": "moose:hood"
             }
         }
     },
     "rewards": {
         "experience": 100
     },
-    "parent": "moose:gas_trigger"
+    "parent": "moose:manual"
 }

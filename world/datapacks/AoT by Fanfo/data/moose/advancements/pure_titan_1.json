@@ -2,33 +2,28 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "Ultra hard steel",
+            "text": "Eren Jaeger",
             "color": "dark_red",
             "bold": true
         },
         "description": {
-            "text": "Craft the only weapon that can kill titans!",
-            "color": "white"
+            "text": "Kill 1 Titan",
+            "color": "dark_purple",
+            "strikethrough": true
         },
         "icon": {
-            "item": "minecraft:iron_ingot",
-            "nbt": "{CustomModelData:1}"
+            "item": "minecraft:flint",
+            "nbt": "{CustomModelData:28}"
         },
-        "frame": "goal",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
     },
     "criteria": {
         "unlock": {
-            "trigger": "minecraft:recipe_unlocked",
-            "conditions": {
-                "recipe": "moose:blade"
-            }
+            "trigger": "minecraft:impossible"
         }
-    },
-    "rewards": {
-        "experience": 40
     },
     "parent": "moose:manual"
 }

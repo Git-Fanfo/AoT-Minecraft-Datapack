@@ -33,6 +33,10 @@ scoreboard objectives add man_atk dummy
 scoreboard objectives add near dummy
 scoreboard objectives add push_1 dummy
 scoreboard objectives add push_6 dummy
+scoreboard objectives add manual trigger
+scoreboard objectives add Titan_Kill_Count dummy ["Kills"]
+
+
 scoreboard players set @a near 0
 scoreboard players set @a hit 0
 scoreboard players set @a man_cool 0

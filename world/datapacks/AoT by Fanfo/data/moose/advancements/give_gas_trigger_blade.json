@@ -11,5 +11,5 @@
     "rewards": {
         "function": "moose:give/gas_trigger_blade"
     },
-    "parent": "moose:blade"
+    "parent": "moose:gas_trigger_blade"
 }

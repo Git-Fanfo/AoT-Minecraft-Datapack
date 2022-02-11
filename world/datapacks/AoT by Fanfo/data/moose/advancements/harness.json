@@ -2,19 +2,19 @@
     "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
         "title": {
-            "text": "The Perfect Weapon",
-            "color": "dark_red",
+            "text": "Light as a feather",
+            "color": "dark_green",
             "bold": true
         },
         "description": {
-            "text": "Seid ihr das Essen?",
+            "text": "Craft the Survey Corps Harness!",
             "color": "white"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:1}"
+            "item": "minecraft:leather_leggings",
+            "nbt": "{display:{color:16777215}}"
         },
-        "frame": "goal",
+        "frame": "task",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
@@ -23,12 +23,12 @@
         "unlock": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "moose:gas_trigger_blade"
+                "recipe": "moose:harness"
             }
         }
     },
     "rewards": {
         "experience": 100
     },
-    "parent": "moose:gas_trigger"
+    "parent": "moose:cape"
 }

@@ -1,0 +1,1 @@
+give @p leather_chestplate{display:{Name:'{"text":"Survey Corps Cape","color":"dark_green","bold":true,"italic":true}',color:16777215},HideFlags:68,Unbreakable:1b,survey_cops:1b,AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;1962935861,-1777055696,-1285532162,-1286025106],Slot:"chest"}]} 1

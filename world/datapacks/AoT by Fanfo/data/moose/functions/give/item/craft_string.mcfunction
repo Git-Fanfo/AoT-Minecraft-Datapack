@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"The ODM Gear\'s Mechanisms","color":"aqua","bold":true,"italic":true}',Lore:['{"text":"Wires stored in the main unit"}','{"text":"Two axles that spin independently"}']},HideFlags:32,CustomModelData:1} 1

@@ -12,26 +12,10 @@ execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=near
 
 # Matar cuerdas en el aigre
 execute as @e[tag=3Dhook_1,type=bat] at @s unless entity @a[distance=..2] run kill @s
-
 execute as @e[tag=3Dhook_6,type=bat] at @s unless entity @a[distance=..2] run kill @s
 
-# Efectos del 3D
-execute as @a[nbt={SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}},Inventory:[{Slot:-106b,id:"minecraft:slime_ball",tag:{odm_gear:1b}}]}] run function moose:mech_gear/effects
-
-#Cambiar cuando tenga la tag
-execute as @a[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin",tag:{survey_cops:1b}}]}] run effect give @p night_vision 12 0 true
-
-# Kill old
-tag @a[tag=impulse2] remove impulse2 
-
-# give cool
-scoreboard players set @a[tag=!throw] man_cool 0
-
-# Trigger
-execute as @a[nbt={SelectedItem:{id:"minecraft:written_book",tag:{manual:1b}}}] at @p run function moose:controller/manual/in_hand
-execute as @a[scores={manual=1..}] run function moose:controller/manual/trigger
-execute as @a[scores={Titan_Kill_Count=1..}] run function moose:controller/advancements/kill_count
-
+# Funciones jugadores
+execute as @a run function moose:selectors/players_seconds
 
 # Efectos titanes
 scoreboard players set @e[tag=neck,scores={smoke_cool=0}] smoke_cool 7
@@ -41,6 +25,7 @@ scoreboard players remove @e[tag=neck,scores={smoke_cool=1..}] smoke_cool 1
 
 # tp titan
 execute as @e[tag=feet] at @s if entity @e[tag=feet,distance=0.1..3] run summon creeper ^ ^.2 ^1.5 {NoGravity:1b,Silent:1b,Invulnerable:1b,ExplosionRadius:2b,Fuse:0,Tags:["motion"],CustomName:'{"text":"Titan"}'}
+
 # set time
 execute store result score hora time run time query daytime
 

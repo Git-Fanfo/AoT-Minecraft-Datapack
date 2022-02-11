@@ -35,8 +35,10 @@ execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear
 execute as @a[nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}}] run function moose:mech_gear/kill
 
 # Equipar las cuerdas
-execute as @a at @a if score @s id_player = @e[tag=3D_1,type=armor_stand,limit=1, sort=nearest] id_3D_1 at @s run tp @e[tag=3D_1,sort=nearest,limit=1] ^-.3 ^-.2 ^.3
-execute as @a at @a if score @s id_player = @e[tag=3D_6,type=armor_stand,limit=1, sort=nearest] id_3D_6 at @s run tp @e[tag=3D_6,sort=nearest,limit=1] ^.3 ^-.2 ^.3
+
+execute as @a at @a if score @s id_player = @e[tag=3Dhook_1,limit=1, sort=nearest] id_3D_1 at @s run tp @e[tag=3Dhook_1,sort=nearest,limit=1] ^-.3 ^.5 ^-.3
+
+execute as @a at @a if score @s id_player = @e[tag=3Dhook_6,limit=1, sort=nearest] id_3D_6 at @s run tp @e[tag=3Dhook_6,sort=nearest,limit=1] ^.3 ^.5 ^-.3
 
 # Disparar proyectiles
 execute as @e[tag=motion_1,tag=!motion_added] at @s rotated as @p run function moose:mech_gear/apply_motion/1

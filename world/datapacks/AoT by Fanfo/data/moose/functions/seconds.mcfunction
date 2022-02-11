@@ -11,10 +11,8 @@ execute as @e[type=villager,tag=!not_eldian,tag=!head,sort=random] at @s run fun
 execute as @e[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run tp @s ~ -252 ~
 
 # Matar cuerdas en el aigre
-execute as @e[tag=3D_1,type=armor_stand] at @s unless entity @a[distance=..2] run kill @s
 execute as @e[tag=3Dhook_1,type=bat] at @s unless entity @a[distance=..2] run kill @s
 
-execute as @e[tag=3D_6,type=armor_stand] at @s unless entity @a[distance=..2] run kill @s
 execute as @e[tag=3Dhook_6,type=bat] at @s unless entity @a[distance=..2] run kill @s
 
 # Efectos del 3D

@@ -3,7 +3,7 @@ title @a subtitle {"text":"Attack on Titan","color":"dark_red"}
 title @a title {"text":"\u9032\u6483\u306e\u5de8\u4eba","bold":true,"color":"gray"}
 
 tellraw @a ["",{"text":"\n\n\n\n\n---------------------------------\nCreated by Fanfo\n---------------------------------\n","color":"dark_red"},{"text":"\n\n "}]
-tellraw @a ["",{"text":"Support my "},{"text":"Patreon","bold":true,"italic":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":"to become a Pure Titan in the datapack!\n("},{"text":"Click here","bold":true,"italic":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":")\n"}]
+tellraw @a ["",{"text":"Support my "},{"text":"Patreon","bold":true,"italic":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":" to become a Pure Titan in the datapack!\n("},{"text":"Click here","bold":true,"italic":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":")\n"}]
 #execute at @a run playsound minecraft:aot.load player @a ~ ~ ~ 1 1
 
 #Rules

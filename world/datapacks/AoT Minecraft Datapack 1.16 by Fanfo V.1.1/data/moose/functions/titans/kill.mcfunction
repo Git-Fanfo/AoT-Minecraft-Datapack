@@ -13,8 +13,8 @@ execute at @p run tp @e[type=slime,tag=legs,sort=nearest,limit=1] ~ -200 ~
 #execute at @s run tp @e[type=spider,distance=..4,tag=kill,sort=nearest,limit=1] ~ -200 ~
 
 #kill @e[type=slime,tag=kill,sort=nearest,limit=1,distance=..15]
-
-scoreboard players add @p[scores={man_atk=1..},distance=0..6] Titan_Kill_Count 1
+# PETITION
+execute as @s[] run scoreboard players add @p[scores={man_atk=1..},distance=0..6] Titan_Kill_Count 1
 
 # DIstance hasta el jugador más cercano
 execute as @p[scores={man_atk=1..},distance=0..6] run function moose:mech_gear/blades/replace_aux

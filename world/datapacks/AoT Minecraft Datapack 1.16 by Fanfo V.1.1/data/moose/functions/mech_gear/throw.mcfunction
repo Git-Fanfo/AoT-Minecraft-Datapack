@@ -1,5 +1,6 @@
 execute at @s run playsound minecraft:aot.shoot player @a[distance=..8] ~ ~ ~ 1 1
-title @s actionbar {"text":"<   >","bold":true,"color":"gold"}
+#PETITION UNCOMMENT
+#title @s actionbar {"text":"<   >","bold":true,"color":"gold"}
 
 
 # SET ID PLAYER

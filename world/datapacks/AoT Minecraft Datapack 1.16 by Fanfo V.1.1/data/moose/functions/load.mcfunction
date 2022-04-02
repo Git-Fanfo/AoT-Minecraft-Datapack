@@ -89,7 +89,10 @@ scoreboard players add ender_c counter 0
 
 #Periodista
 scoreboard players add gameState counter 0
+# PETITION
+gamerule fallDamage false
+
 
 # add no col
-team add nocol
-team modify nocol collisionRule never
+#team add nocol
+#team modify nocol collisionRule never

@@ -1,6 +1,6 @@
-scoreboard players set #TimerEntity TimerScore 300
-scoreboard players set #TimerEntity TimerMinutes 5
-scoreboard players set #TimerEntity TimerSeconds 0
+scoreboard players set #TimerEntity TimerScore 20
+scoreboard players set #TimerEntity TimerMinutes 0
+scoreboard players set #TimerEntity TimerSeconds 20
 scoreboard players set #Leader Titan_Kill_Count 0
 
 bossbar set minecraft:1 name ["",{"score":{"name":"#TimerEntity","objective":"TimerMinutes"}},{"text":":0"},{"score":{"name":"#TimerEntity","objective":"TimerSeconds"}}]

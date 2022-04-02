@@ -8,11 +8,8 @@ bossbar set minecraft:1 color green
 scoreboard players set gameState counter -1
 
 
-#revoke advancements
-scoreboard objectives remove Titan_Kill_Count
-scoreboard objectives add Titan_Kill_Count dummy ["Kills"]
-scoreboard players set @a Titan_Kill_Count 0
-scoreboard objectives setdisplay sidebar Titan_Kill_Count
+#reset
+function moose:auxiliar/periodista/reset_kills
 
 kill @e[tag=neck]
 advancement revoke @a only moose:pure_titan_1

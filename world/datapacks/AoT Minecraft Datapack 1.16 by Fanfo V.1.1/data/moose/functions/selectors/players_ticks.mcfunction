@@ -1,8 +1,8 @@
-# Efecto botas
-execute at @s if block ~ ~-5 ~ air run execute unless block ~ ~-6.5 ~ air run execute as @s[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots",tag:{survey_cops:1b}}]}] run effect give @s slow_falling 1 0 true
+# Efecto botas PETITION
+#execute at @s if block ~ ~-5 ~ air run execute unless block ~ ~-6.5 ~ air run execute as @s[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots",tag:{survey_cops:1b}}]}] run effect give @s slow_falling 1 0 true
 
 #join nocol
-team join nocol @s[tag=wrap]
+#team join nocol @s[tag=wrap]
 
 # Matar Titan
 execute as @s[tag=!armed_1,nbt={SelectedItem:{Count:1b,id:"minecraft:carrot_on_a_stick",tag:{blade:1b}}}] run function moose:mech_gear/blades/attack_1

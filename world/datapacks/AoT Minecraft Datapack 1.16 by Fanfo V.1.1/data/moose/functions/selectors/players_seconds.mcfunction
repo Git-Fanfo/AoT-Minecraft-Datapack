@@ -9,7 +9,7 @@ execute as @s[nbt={Inventory:[{Slot:103b,id:"minecraft:carved_pumpkin",tag:{surv
 tag @s[tag=impulse2] remove impulse2 
 
 # remove nocol #TODOO
-team leave @s[tag=!wrap]
+#team leave @s[tag=!wrap]
 
 # give cool
 scoreboard players set @s[tag=!throw] man_cool 0

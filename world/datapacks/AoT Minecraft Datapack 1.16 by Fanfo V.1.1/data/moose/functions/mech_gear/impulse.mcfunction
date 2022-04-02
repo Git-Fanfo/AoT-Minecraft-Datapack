@@ -4,8 +4,8 @@ execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_ef
 #PETITION UNCOMMENT
 #title @s actionbar {"text":"/     \\","bold":true,"color":"green"}
 
-#Falling PETITION
-execute as @s[scores={man_land=2..}] run effect give @s slow_falling 2 0 true
+#Falling PETITION 2.. -> 1..
+execute as @s[scores={man_land=1..}] run effect give @s slow_falling 5 0 true
 
 #execute as @e[distance=..3,nbt=!{SelectedItem:{id:"minecraft:carrot_on_a_stick",tag:{odm_gear:1b}}},type=!armor_stand,type=!bat, tag=!motion, tag=!target, type=!area_effect_cloud] as @s run scoreboard players add @p near 1
 execute if entity @e[distance=..3,tag=kill] as @s run scoreboard players add @s near 1

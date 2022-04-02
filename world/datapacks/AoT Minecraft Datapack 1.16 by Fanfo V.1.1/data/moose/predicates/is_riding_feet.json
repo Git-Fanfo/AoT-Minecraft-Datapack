@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "vehicle": {
+        "type": "minecraft:zombie_villager",
+        "nbt": "{Tags:[\"feet\"]}"
+      }
+    }
+  }

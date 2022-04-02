@@ -1,0 +1,27 @@
+{
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2022-03-27 18:55:22 -0500"
+    },
+    "done": true
+  },
+  "moose:root": {
+    "criteria": {
+      "unlock": "2022-03-27 18:38:27 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2022-03-27 18:58:46 -0500"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2022-03-27 18:38:27 -0500"
+    },
+    "done": false
+  },
+  "DataVersion": 2586
+}

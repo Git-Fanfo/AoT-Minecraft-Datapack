@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"The Ecology of Titans","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"The origins of the Titans is not recorded in existing historical records, and nearly all aspects thereof are unknown."}']},HideFlags:32,CustomModelData:6} 1

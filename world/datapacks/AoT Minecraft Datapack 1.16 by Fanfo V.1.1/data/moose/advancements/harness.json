@@ -1,0 +1,34 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Light as a feather",
+            "color": "dark_green",
+            "bold": true
+        },
+        "description": {
+            "text": "Craft the Survey Corps Harness!",
+            "color": "white"
+        },
+        "icon": {
+            "item": "minecraft:leather_leggings",
+            "nbt": "{display:{color:16777215}}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:harness"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "moose:cape"
+}

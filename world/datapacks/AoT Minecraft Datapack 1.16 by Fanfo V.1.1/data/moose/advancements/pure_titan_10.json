@@ -1,0 +1,29 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": " Jean Kirschtein",
+            "color": "dark_red",
+            "bold": true
+        },
+        "description": {
+            "text": "Kill 10 Titans",
+            "color": "dark_purple",
+            "strikethrough": true
+        },
+        "icon": {
+            "item": "minecraft:flint",
+            "nbt": "{CustomModelData:28}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "moose:pure_titan_1"
+}

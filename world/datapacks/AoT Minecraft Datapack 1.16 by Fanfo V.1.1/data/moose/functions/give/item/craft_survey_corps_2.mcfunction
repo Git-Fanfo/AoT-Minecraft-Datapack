@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"The ODM Gear\'s Body Weight Transfer Equipment","color":"dark_red","bold":true,"italic":true}',Lore:['{"text":"Users must shift their entire weight to one side of their hips or the other. This permits acrobatic movement, but heavily taxes the muscles."}']},HideFlags:32,CustomModelData:7} 1

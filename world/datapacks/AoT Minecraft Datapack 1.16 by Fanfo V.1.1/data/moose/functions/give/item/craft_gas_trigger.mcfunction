@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"Controller","color":"aqua","bold":true,"italic":true}',Lore:['{"text":"Gas is compressed and held in canisters from which it is injected"}']},HideFlags:32,CustomModelData:3} 1

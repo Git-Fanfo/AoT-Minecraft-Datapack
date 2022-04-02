@@ -1,0 +1,20 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "X": {
+      "item": "minecraft:green_dye",
+      "data": 2
+    }
+  },
+  "result": {
+    "item": "minecraft:knowledge_book"
+  }
+}

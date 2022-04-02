@@ -1,0 +1,1 @@
+give @p poisonous_potato{display:{Name:'{"text":"Ultrahard Steel","color":"light_purple","bold":true,"italic":true}',Lore:['{"text":"A material that is both hard and flexible, allowing it to tear through Titan flesh. The \\"single-edged swords\\" that use the material are widely known as anti-Titan weapons."}']},HideFlags:32,CustomModelData:4} 1

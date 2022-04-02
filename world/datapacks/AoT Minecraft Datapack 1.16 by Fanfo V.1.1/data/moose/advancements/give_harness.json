@@ -1,0 +1,16 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:harness"
+            }
+        }
+    },
+    "rewards": {
+        "experience": 100,
+        "function": "moose:give/harness"
+    },
+    "parent": "moose:harness"
+}

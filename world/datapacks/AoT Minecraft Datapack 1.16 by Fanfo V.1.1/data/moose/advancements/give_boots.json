@@ -1,0 +1,15 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "unlock": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "moose:boots"
+            }
+        }
+    },
+    "rewards": {
+        "function": "moose:give/boots"
+    },
+    "parent": "moose:boots"
+}

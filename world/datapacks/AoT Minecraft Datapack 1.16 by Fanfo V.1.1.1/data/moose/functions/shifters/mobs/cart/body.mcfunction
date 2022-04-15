@@ -19,13 +19,13 @@ data modify entity @s[tag=body] Motion[1] set from entity @a[tag=cart,limit=1] M
 
 # animate 
 
-#scoreboard players set @s[scores={walk=0}] walk 58
-#scoreboard players set @s[scores={idle=0}] idle 40
+scoreboard players set @s[scores={walk=0}] walk 58
+scoreboard players set @s[scores={idle=0}] idle 40
 
 #Aqui no se puede usar desde n sino desde n-1 porque se opera antes
 execute if entity @a[tag=cart,limit=1,tag=!attack,tag=!attack_2,tag=!walk] run function moose:shifters/mobs/cart/animate/idle
 execute if entity @a[tag=cart,limit=1,tag=!attack,tag=!attack_2,tag=walk] run function moose:shifters/mobs/cart/animate/walk
 
-#scoreboard players remove @s[scores={idle=1..40}] idle 1
-#scoreboard players remove @s[scores={atk=1..70}] atk 1
-#scoreboard players remove @s[scores={walk=1..58}] walk 1
+scoreboard players remove @s[scores={idle=1..40}] idle 1
+scoreboard players remove @s[scores={atk=1..70}] atk 1
+scoreboard players remove @s[scores={walk=1..58}] walk 1

@@ -11,7 +11,7 @@ execute as @s[tag=cart] at @s run function moose:shifters/mobs/cart/player
 execute at @s if block ~ ~-5 ~ air run execute unless block ~ ~-6.5 ~ air run execute as @s[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots",tag:{survey_cops:1b}}]}] run effect give @s slow_falling 1 0 true
 
 # Animate titan
-execute at @s as @e[tag=body,distance=0..30] run function moose:selectors/body
+execute at @s as @e[tag=!shifter,tag=body,distance=0..30] run function moose:selectors/body
 
 # Matar Titan
 execute as @s[tag=!armed_1,predicate=moose:has_gas_trigger_blade] run function moose:mech_gear/blades/attack_1

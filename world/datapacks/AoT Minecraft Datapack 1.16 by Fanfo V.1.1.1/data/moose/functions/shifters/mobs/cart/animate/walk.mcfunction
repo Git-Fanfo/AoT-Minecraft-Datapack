@@ -16,7 +16,7 @@
 
 #execute if entity @s[scores={walk=4}] at @s run playsound minecraft:aot.footsteps hostile @a ~ ~ ~ 5 .1
 #execute if entity @s[scores={walk=4}] run data merge entity @s {HandItems:[{id:'minecraft:flint',Count:1b,tag:{CustomModelData:128}},{}]}
-
+tellraw @p ["",{"text":"Test ticks: "},{"score":{"name":"@s","objective":"walk"}}]
 
 execute if entity @s[scores={walk=57}] run data merge entity @s {HandItems:[{id:'minecraft:scute',Count:1b,tag:{CustomModelData:4}},{}]}
 execute if entity @s[scores={walk=51}] run data merge entity @s {HandItems:[{id:'minecraft:scute',Count:1b,tag:{CustomModelData:5}},{}]}

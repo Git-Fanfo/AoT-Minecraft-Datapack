@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{Inventory:[{Slot:-106b,id:\"minecraft:slime_ball\",tag:{blade:1b}}]}"
+  }
+}

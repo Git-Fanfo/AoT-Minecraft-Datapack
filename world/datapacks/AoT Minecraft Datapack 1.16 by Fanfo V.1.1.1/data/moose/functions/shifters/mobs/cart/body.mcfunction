@@ -1,21 +1,21 @@
+# Health System
+execute at @s run bossbar set minecraft:cart_health players @a[distance=..50]
+execute store result score cart health run data get entity @s Health
+scoreboard players operation cart health -= #100 counter
+execute store result bossbar cart_health value run scoreboard players get cart health
+
+execute if entity @a[tag=cart,limit=1,nbt={HurtTime:9s}] run effect give @s instant_damage 1 3 
+
 # mover el modelo
 # Y si lo tpas en base a un estado? like si está idle así y si está en corriendo lo pones más cerca
 execute as @s at @a[tag=cart,limit=1,tag=!walk] run execute rotated ~ 0 run tp @s ^.35 ^-3.9 ^-2
 execute as @s at @a[tag=cart,limit=1,tag=walk] run execute rotated ~ 0 run tp @s ^.35 ^-3.9 ^-1.4
 execute as @s at @a[tag=cart,limit=1] if score cart_is_jumping jump matches 1 run execute rotated ~ 0 run tp @s ^.35 ^-1.9 ^-1.4
 
-
- # Rotar el modelo
+# Rotar el modelo
 data modify entity @s[tag=body] Rotation[0] set from entity @a[tag=cart,limit=1] Rotation[0]
 
 data modify entity @s[tag=body] Motion[1] set from entity @a[tag=cart,limit=1] Motion[1]
-
-
-#execute if score cart_is_jumping jump matches 1 run data merge entity @s {HandItems:[{id:'minecraft:scute',Count:1b,tag:{CustomModelData:2}},{}]}
-#execute if score cart_is_jumping jump matches 0 run data merge entity @s {HandItems:[{id:'minecraft:scute',Count:1b,tag:{CustomModelData:1}},{}]}
-
-#If se está moviendo
-#execute as @s if score @a[tag=cart,limit=1] motion_x1_1 matches 1.. run tag @s add walk
 
 # animate 
 

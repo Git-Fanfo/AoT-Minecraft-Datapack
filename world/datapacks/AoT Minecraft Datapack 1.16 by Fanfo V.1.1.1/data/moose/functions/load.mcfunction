@@ -5,7 +5,6 @@ title @a title {"text":"\u9032\u6483\u306e\u5de8\u4eba","bold":true,"color":"gra
 tellraw @a ["",{"text":"\n\n\n\n\n---------------------------------\nCreated by Fanfo\n---------------------------------\n","color":"dark_red"},{"text":"\n\n "}]
 tellraw @a ["",{"text":"Support my "},{"text":"Patreon","bold":true,"italic":true,"color":"gold","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":" to become a Pure Titan in the datapack!\n("},{"text":"Click here","bold":true,"italic":true,"color":"light_purple","clickEvent":{"action":"open_url","value":"https://www.patreon.com/Fanfo"}},{"text":")\n"}]
 #execute at @a run playsound minecraft:aot.load player @a ~ ~ ~ 1 1
-
 #Rules
 gamerule mobGriefing false
 gamerule doFireTick false
@@ -29,11 +28,14 @@ scoreboard objectives add time dummy
 scoreboard players set segundo time 0
 scoreboard players set hora time 0
 
-scoreboard objectives add man_gear minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add man_cool dummy
 scoreboard objectives add man_land dummy
 scoreboard objectives add man_atk dummy
 scoreboard objectives add man_push dummy
+
+scoreboard objectives add man_throw dummy
+scoreboard objectives add man_impulse dummy
+
 scoreboard objectives add near dummy
 scoreboard objectives add push_1 dummy
 scoreboard objectives add push_6 dummy
@@ -50,6 +52,7 @@ scoreboard players set @a man_land 0
 #scoreboard players set @a man_atk 0
 scoreboard players set @a push_1 0
 scoreboard players set @a push_6 0
+scoreboard objectives add using_carrot minecraft.used:minecraft.carrot_on_a_stick
 
 # 3D Manuever
 scoreboard objectives add id_player dummy
@@ -71,6 +74,7 @@ scoreboard objectives add motion_y2_1 dummy
 scoreboard objectives add motion_z2_1 dummy
 
 scoreboard players set #-1 counter -1
+scoreboard players set #100 counter 100
 # 6 -
 # - -
 # - -
@@ -95,6 +99,7 @@ scoreboard players add gameState counter 0
 
 # shifters
 scoreboard objectives add jump dummy
+scoreboard objectives add health dummy
 
 # add no col
 team add nocol

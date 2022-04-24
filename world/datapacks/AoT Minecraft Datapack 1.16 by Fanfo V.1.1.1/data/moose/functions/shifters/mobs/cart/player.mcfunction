@@ -1,3 +1,4 @@
+execute as @s if entity @s[tag=!first] run function moose:shifters/mobs/cart/born
 # Its moving!
 # Voy a aprovechar que ya existen scoreboards para esto y así no creo variables
 execute as @s store result score @s motion_x1_1 run data get entity @s Pos[0] 1000
@@ -11,7 +12,8 @@ execute unless block ~ ~-4 ~ air run tp @s ~ ~1 ~
 effect give @s slow_falling 3 0 true
 effect give @s invisibility 2 0 true
 
-execute rotated ~ 0 run particle campfire_cosy_smoke ^ ^2.3 ^-.7 .2 .2 .2 0.01 6
+#particle smoke
+#execute rotated ~ 0 run particle campfire_cosy_smoke ^ ^2.3 ^-.7 .2 .2 .2 0.01 6
 
 #execute if predicate moose:is_sprinting run execute rotated ~ 0 run tp @s ^ ^ ^.2
 

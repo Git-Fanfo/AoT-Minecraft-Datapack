@@ -19,7 +19,7 @@ execute as @s[scores={atk_cool=41..46}] at @s run tp @p[tag=wrap] ^ ^6.5 ^2.5
 execute as @s[scores={atk_cool=1..40}] at @s run tp @p[tag=wrap] ^ ^7 ^1.6
 
 #Para buscar un ejemplo busca DeathExample
-# Comer
+# Comer Restar 3 frames
 execute as @s[scores={atk_cool=40}] run execute at @e[tag=neck] run execute as @p[tag=wrap] at @s run function moose:titans/mobs/1/kill_atk_1
 
 #Quitar tag

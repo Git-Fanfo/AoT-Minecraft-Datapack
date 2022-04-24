@@ -28,6 +28,8 @@ execute if entity @s[tag=mob4,tag=!attack,tag=!attack_2,tag=walk] run function m
 execute if entity @s[tag=mob4,tag=!attack,tag=!attack_2,tag=!walk] run function moose:titans/mobs/4/animate/idle
 
 # mob5
+execute if entity @s[tag=mob5,tag=attack] run function moose:titans/mobs/5/animate/attack
+
 execute if entity @s[tag=mob5,tag=!attack,tag=!attack_2,tag=!walk] run function moose:titans/mobs/5/animate/idle
 execute if entity @s[tag=mob5,tag=!attack,tag=!attack_2,tag=walk] run function moose:titans/mobs/5/animate/walk
 

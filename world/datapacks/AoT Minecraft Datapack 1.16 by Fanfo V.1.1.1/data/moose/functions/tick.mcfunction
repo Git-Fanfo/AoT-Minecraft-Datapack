@@ -12,4 +12,3 @@ execute if score segundo time matches 20 run function moose:seconds
 
 # Detectar entidades
 execute as @e run function moose:selectors/entity
-

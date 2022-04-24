@@ -5,7 +5,7 @@ execute as @s[type=player] run function moose:selectors/players_ticks
 execute as @s[tag=titan] run function moose:selectors/titan 
 
 # If shifter
-execute as @s[tag=shifter] run function moose:selectors/shifter 
+execute as @s[tag=shifter] run function moose:selectors/shifter
 
 # Matar titan
 execute as @s[tag=kill] run function moose:selectors/kill
@@ -19,14 +19,20 @@ tp @s[type=zombie_villager,tag=!titan,tag=!head] ~ -252 ~
 execute as @s[tag=eldian] at @s unless entity @e[tag=head,distance=..2,sort=nearest,limit=1] run particle minecraft:block minecraft:redstone_block ^ ^ ^ 0 0 0 1 20
 
 # animate hurt
-execute as @s[nbt={HurtTime:10s}] at @s run particle minecraft:block minecraft:redstone_block ^ ^1 ^-.45 0 0 0 1 30
+execute as @s[nbt={HurtTime:10s},type=!bat] at @s run particle minecraft:block minecraft:redstone_block ^ ^1 ^-.45 0 0 0 1 30
 
 # Disparar proyectiles
 execute as @s[tag=motion_1,tag=!motion_added] at @s rotated as @p run function moose:mech_gear/apply_motion/1
 execute as @s[tag=rope_1] at @s run tp @s @e[tag=hook_1,sort=nearest,limit=1]
 
-execute as @s[tag=motion_6,tag=!motion_added] at @s rotated as @p run function moose:mech_gear/apply_motion/6
+execute as @s[tag=motion_6,tag=!motion_added] at @s rotated as @p run function moose:mech_gear/apply_motion/1
 execute as @s[tag=rope_6] at @s run tp @s @e[tag=hook_6,sort=nearest,limit=1]
+
+#Disparar blazo
+execute as @s[tag=bullet,tag=!motion_added] at @s rotated as @p run function moose:mech_gear/apply_motion/1
+
+#execute as @s[tag=bull_dmg] at @s run function moose:shifters/mobs/cart/attack/air
+execute as @s[tag=bull_dmg] at @s run function moose:shifters/mobs/cart/attack/air
 
 # Detectar el choque DER
 execute as @s[tag=hook_1,tag=!InGround] unless predicate moose:is_riding_snowball at @s run function moose:mech_gear/ground

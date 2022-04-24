@@ -20,4 +20,7 @@ execute as @s[tag=mob3,scores={atk_cool=71..140}] at @s run execute at @e[tag=mo
 execute as @s[tag=mob4,scores={atk_cool=1..70}] at @s if entity @a[distance=0..7] run function moose:titans/mobs/4/attack
 execute as @s[tag=mob4,scores={atk_cool=71..140}] at @s if entity @a[distance=0..7] run function moose:titans/mobs/4/attack_2
 
+# Mob 5
+execute as @s[tag=mob5,scores={atk_cool=1..70}] at @s if entity @a[distance=0..15] run function moose:titans/mobs/5/attack
+
 scoreboard players remove @s[scores={atk_cool=1..}] atk_cool 1

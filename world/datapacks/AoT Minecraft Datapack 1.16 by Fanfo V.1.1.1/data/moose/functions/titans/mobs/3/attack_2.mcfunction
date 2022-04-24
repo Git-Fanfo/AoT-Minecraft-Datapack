@@ -20,7 +20,7 @@ execute as @s[scores={atk_cool=109..114}] at @s run tp @p[tag=wrap] ^-.2 ^7.4 ^.
 execute as @s[scores={atk_cool=..108}] at @s run tp @p[tag=wrap] ^-.2 ^7.5 ^.6
 
 #Comer
-execute as @s[scores={atk_cool=112}] run execute at @e[tag=neck] run execute as @p[distance=0..4,tag=wrap] at @s run function moose:titans/mobs/3/kill_atk_2
+execute as @s[scores={atk_cool=108}] run execute at @e[tag=neck] run execute as @p[distance=0..4,tag=wrap] at @s run function moose:titans/mobs/3/kill_atk_2
 
 #Quitar tag
 execute as @s[scores={atk_cool=1..100}] run tag @a[tag=wrap] remove wrap

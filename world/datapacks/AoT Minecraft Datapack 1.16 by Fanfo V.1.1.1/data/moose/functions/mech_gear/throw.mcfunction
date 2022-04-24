@@ -35,7 +35,7 @@ execute store result score @e[tag=hook_6,sort=nearest,limit=1] id_hook_6 run dat
 execute store result score @e[tag=3Dhook_6,sort=nearest,limit=1] id_3D_6 run data get entity @s UUID[0]
 
 # Atar bats
-data modify entity @e[tag=rope_6,type=bat,sort=nearest,limit=1] UUID set from entity @e[tag=3Dhook_6,type=bat,sort=nearest,limit=1] {}
+#data modify entity @e[tag=rope_6,type=bat,sort=nearest,limit=1] UUID set from entity @e[tag=3Dhook_6,type=bat,sort=nearest,limit=1] {}
 data modify entity @e[tag=rope_6,type=bat,sort=nearest,limit=1] Leash set from entity @e[tag=3Dhook_6,type=bat,sort=nearest,limit=1] {}
 
 # Summmon boat
@@ -47,5 +47,8 @@ scoreboard players set @s man_cool 14
 
 tag @s add throw
 
+# Cada vez que se tira poner el man_throw
+execute store result score @s man_throw run data get entity @s Rotation[0]
+
 # Reset escaneo
-scoreboard players set @s[scores={man_gear=1..}] man_gear 0
+scoreboard players set @s[scores={using_carrot=1..}] using_carrot 0

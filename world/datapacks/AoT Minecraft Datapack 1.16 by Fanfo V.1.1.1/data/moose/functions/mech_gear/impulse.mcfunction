@@ -1,11 +1,17 @@
-execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:2f,Duration:15,Effects:[{Id:25b,Amplifier:32b,Duration:5,ShowParticles:0b}]}
+#execute as @s[scores={man_land=2..}] unless block ~ ~-1 ~ air run summon area_effect_cloud ^ ^.5 ^ {Particle:"explosion",NoGravity:1b,ReapplicationDelay:0,Radius:2f,Duration:15,Effects:[{Id:25b,Amplifier:32b,Duration:5,ShowParticles:0b}]}
+
+# Cada vez que se tira poner el man_throw
+execute store result score @s man_impulse run data get entity @s Rotation[0]
+scoreboard players operation @s man_impulse -= @s man_throw
+
+execute as @s[scores={man_land=2..,man_impulse=-90..90}] run function moose:mech_gear/aux_man_land
+
+#Playsound si está por fuera
+execute as @s unless score @s man_impulse matches -90..90 run playsound minecraft:item.shield.break player @s ~ ~ ~ 2 .5
 
 #execute as @s[scores={man_land=2..}] run effect give @s levitation 
 #PETITION UNCOMMENT
 title @s actionbar {"text":"/     \\","bold":true,"color":"green"}
-
-#Falling PETITION 2.. -> 1..
-execute as @s[scores={man_land=2..}] run effect give @s slow_falling 3 0 true
 
 #Si esta cerca del kill
 execute if entity @e[distance=..4,tag=kill] as @s run scoreboard players add @s near 1
@@ -15,18 +21,8 @@ execute if entity @e[distance=..4,tag=kill] as @s run scoreboard players add @s 
 # IF != CERCA DE UNA ENTIDAD
 execute as @s[scores={man_land=1..,near=0}] run effect give @a[distance=..3] resistance 2 255 true
 
-#PETITION 2.. -> 1..
-execute as @s[scores={man_land=2..,man_push=..2,near=0}] run function moose:mech_gear/creeper/1
-execute as @s[scores={man_land=2..,man_push=3,near=0}] run function moose:mech_gear/creeper/2
-execute as @s[scores={man_land=2..,man_push=4..9,near=0}] run function moose:mech_gear/creeper/3
-execute as @s[scores={man_land=2..,man_push=10..,near=0}] run function moose:mech_gear/creeper/4
-
-#PETITION 2.. -> 1..
-playsound minecraft:aot.impulse player @s[scores={man_land=2..}] ~ ~ ~ 1 1
-
-
 # IF = CERCA DE UNA ENTIDAD
-execute as @s[scores={man_land=2..,near=1..}] run tag @s add impulse2
+#execute as @s[scores={man_land=2..,near=1..}] run tag @s add impulse2
 #reset score 
 scoreboard players set @s near 0
 

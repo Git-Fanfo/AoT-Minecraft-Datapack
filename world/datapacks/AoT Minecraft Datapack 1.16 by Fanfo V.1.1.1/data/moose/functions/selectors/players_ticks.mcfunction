@@ -4,7 +4,7 @@
 #execute if predicate moose:has_gas_trigger_blade run say gastriggerblade
 #execute if predicate moose:has_odm_blade run say odmblade
 
-# Shifters
+# Shifters#cambiar transform
 execute as @s[tag=transform] at @s run function moose:shifters/select_shifter
 
 # Efecto botas PETITION
